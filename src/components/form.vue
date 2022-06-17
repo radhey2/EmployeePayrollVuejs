@@ -174,6 +174,8 @@
 </body>
 </template>
 <script>
+import service from '../service';
+
 export default {
     name: 'form',
     data(){
@@ -198,9 +200,21 @@ export default {
             event.preventDefault();
             this.formValues.startDate=this.formValues.day + this.formValues.month + this.formValues.year;
             console.log(this.formValues);
-            alert("Employee Added Successfully to the Console")
+            const data = this.formValues;
+            service.addEmployee(data).then((response) => {
+                console.log(response)
+                console.log(response.data.data)
+                this.addEmployee = response.data.data
+                 alert("Employee Added Successfully to the Console",response)
+            })
+            .catch(error => {
+                console.log(error);
+                 alert("Employee is not Addedd to the Console")
+            })
+            
+           
         }
-    } 
-
+    },
+    
 }
 </script>
