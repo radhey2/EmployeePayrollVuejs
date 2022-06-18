@@ -22,14 +22,27 @@
                         <img src="src\assets\2e34e565526802985f40f7c11146406d.png" alt="" width="40" height="33">Add User
                    </router-link>
             </div>
-            <div class="table-main">
+            <!-- <div class="table-main">
                 <table class="table" id="display">
                     <tr>
                         <th></th>   <th>Name</th>   <th>Gender</th>     <th>Department</th>
                                     <th>Salary</th> <th>Start Date</th> <th>Actions</th>    
                     </tr>
                 </table>
+            </div> -->
+            <div class="table-main">
+                <Display/>
             </div>
         </div>
     </body>
 </template>
+
+<script>
+import Display from './Display.vue'
+export default {
+    name:'home',
+    components: {
+        Display
+    }
+}
+</script>

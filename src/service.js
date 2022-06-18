@@ -8,5 +8,13 @@ class service{
         return axios.post(`${Employee_url}/create`,data);
     }
 
+    getAllEmployee(){
+        return axios.get(`${Employee_url}/get`);
+    }
+
+    deleteEmployee(employeeId){
+        return axios.delete(`${Employee_url}/delete/${employeeId}`)
+    }
+
 }
 export default new service()
