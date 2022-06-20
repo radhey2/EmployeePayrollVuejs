@@ -16,5 +16,13 @@ class service{
         return axios.delete(`${Employee_url}/delete/${employeeId}`)
     }
 
+    getEmployeeById(employeeId){
+        return axios.get(`${Employee_url}/get/${employeeId}`);
+    }
+
+    updateEmployee(employeeId,data){
+        return axios.put(`${Employee_url}/update/${employeeId}`,data);
+    }
+
 }
 export default new service()

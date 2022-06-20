@@ -1,6 +1,7 @@
 import {createRouter,createWebHistory} from 'vue-router'
 import home from './components/home.vue'
 import form from './components/form.vue'
+import EditForm from './components/EditForm.vue'
 const routes = [
     {
         path: '/',
@@ -13,7 +14,12 @@ const routes = [
         name: 'form',
         component: form
   
-    }
+    },
+      {
+        path: '/editemployee/:id?',
+        name: 'EditForm',
+        component: EditForm
+      }  
 ];
 const router = createRouter({
     history: createWebHistory(),
