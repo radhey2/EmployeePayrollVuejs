@@ -12,7 +12,7 @@
         <th>Actions</th>
       </tr>
       <tr v-for="employee in employees" :key="employee.id">
-        <td><img src="{{employee.profilePic}}" /></td>
+        <td><img :src='`../assets/${employee.profilePic}`' /></td>
         <td>{{ employee.name }}</td>
         <td>{{ employee.gender }}</td>
         <td>{{ employee.department }}</td>

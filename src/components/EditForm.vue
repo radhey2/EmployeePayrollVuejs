@@ -29,8 +29,8 @@
                     <div class="profile-radio-content">
                         <label>
                             <input type="radio" id="profile" name="profilePic"
-                                value="../assets/Ellipse -3.png" required v-model="formValues.profilePic">
-                            <img class="profile" id='image1' src="../assets/Ellipse -3.png"/>
+                                value="../assets/Ellipse3.png" required v-model="formValues.profilePic">
+                            <img class="profile" id='image1' src="../assets/Ellipse3.png"/>
                         </label>
 
                         <label>

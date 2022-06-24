@@ -29,26 +29,26 @@
                     <div class="profile-radio-content">
                         <label>
                             <input type="radio" id="profile" name="profile"
-                                value="../assets/Ellipse -3.png" required v-model="formValues.profilePic">
-                            <img class="profile" id='image1' src="../assets/Ellipse -3.png"/>
+                                value="../assets/Ellipse3.png" required v-model="formValues.profilePic">
+                            <img class="profile" id='image1' src="../assets/Ellipse3.png"/>
                         </label>
 
                         <label>
                             <input type="radio" id="profile" name="profile"
-                                value="src\assets\Ellipse -1.png" required v-model="formValues.profilePic">
-                            <img class="profile" id='image2' src="src\assets\Ellipse -1.png"/>
+                                value="../assets/Ellipse -1.png" required v-model="formValues.profilePic">
+                            <img class="profile" id='image2' src="../assets/Ellipse -1.png"/>
                         </label>
 
                         <label>
                             <input type="radio" id="profile" name="profile"
-                                value="src\assets\Ellipse -8.png" required v-model="formValues.profilePic">
-                            <img class="profile" id='image3' src="src\assets\Ellipse -8.png"/>
+                                value="../assets/Ellipse -8.png" required v-model="formValues.profilePic">
+                            <img class="profile" id='image3' src="../assets/Ellipse -8.png"/>
                         </label>
 
                         <label>
                             <input type="radio" id="profile" name="profile"
-                                value="src\assets\Ellipse -7.png" required v-model="formValues.profilePic">
-                            <img class="profile" id='image4' src="src\assets\Ellipse -7.png"/>
+                                value="../assets/Ellipse -7.png" required v-model="formValues.profilePic">
+                            <img class="profile" id='image4' src="../assets/Ellipse -7.png"/>
                         </label>
                     </div>
                 </div>
